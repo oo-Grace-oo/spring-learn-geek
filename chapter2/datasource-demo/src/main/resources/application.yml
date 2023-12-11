@@ -9,9 +9,16 @@ spring:
     ansi:
       enabled: ALWAYS
   datasource:
-    url: jdbc:h2:mem:testdb
-    username: sa
+#    url: jdbc:h2:mem:testdb
+#    username: sa
+#    password:
+    url: jdbc:mysql://shaohuayugong.cn:3306/learn_spring?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+    username: learn_spring
     password:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    initialization-mode: always
+    schema: classpath:schema.sql
+    data: classpath:data.sql
     hikari:
       maximum-pool-size: 5
       minimum-idle: 2
