@@ -8,7 +8,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <artifactId>datasource-demo</artifactId>
+    <artifactId>05datasource-demo</artifactId>
     <packaging>jar</packaging>
 
     <name>datasource-demo</name>
