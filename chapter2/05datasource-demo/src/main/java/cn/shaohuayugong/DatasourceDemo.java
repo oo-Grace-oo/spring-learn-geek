@@ -28,6 +28,7 @@ public class DatasourceDemo implements CommandLineRunner {
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
+
     @Override
     public void run(String... args) throws Exception {
         showConnection();
@@ -44,6 +45,7 @@ public class DatasourceDemo implements CommandLineRunner {
         log.warn(conn.toString());
         conn.close();
     }
+
     private void showData() {
         jdbcTemplate.queryForList("SELECT * FROM FOO")
                 .forEach(row -> log.warn(row.toString()));

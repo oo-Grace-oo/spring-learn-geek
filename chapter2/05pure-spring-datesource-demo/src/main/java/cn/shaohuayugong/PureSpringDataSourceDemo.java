@@ -1,5 +1,6 @@
 package cn.shaohuayugong;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Configuration;
@@ -21,6 +22,7 @@ import java.util.Arrays;
  */
 @Configuration
 @EnableTransactionManagement
+@Slf4j
 public class PureSpringDataSourceDemo {
 
     @Autowired
@@ -59,7 +61,7 @@ public class PureSpringDataSourceDemo {
     public void showDataSource() throws SQLException {
         System.out.println(dataSource.toString());
         Connection conn = dataSource.getConnection();
-        System.out.println(conn.toString());
+        log.error(conn.toString());
         conn.close();
     }
 }

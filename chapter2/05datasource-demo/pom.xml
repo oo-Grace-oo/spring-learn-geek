@@ -4,14 +4,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.1.RELEASE</version>
+        <version>2.7.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>05datasource-demo</artifactId>
     <packaging>jar</packaging>
 
-    <name>datasource-demo</name>
+    <name>05datasource-demo</name>
     <url>http://maven.apache.org</url>
 
     <properties>
